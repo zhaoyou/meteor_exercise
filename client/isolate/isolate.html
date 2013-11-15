@@ -1,0 +1,31 @@
+
+<template name="isolate">
+  {{#isolate}}
+    {{>sub1}}
+  {{/isolate}}
+
+  {{>sub2}}
+</template>
+
+<template name="sub1">
+  <h2>Hello world sub1 </h2>
+  <div class="alert alert-info">{{user.name}}</div>
+  {{>sub11}}
+</template>
+
+<template name="sub2">
+  <h3>Hello world sub2</h3>
+  <div class="alert">{{user.name}}</div>
+  {{>sub22}}
+</template>
+
+<template name="sub11">
+  <h4>Hello world sub11</h4>
+  <div class="alert alert-info">{{user.name}}</div>
+</template>
+
+<template name="sub22">
+  <b>template sub22</b>
+  <div class="alert">{{user.name}}</div>
+</template>
+

@@ -1,0 +1,30 @@
+
+<template name="main">
+  <h1>Index</h1>
+
+  {{#with user}}
+    <strong>{{name}}</strong>
+  {{/with}}
+
+ </template>
+
+
+
+<template name="foreach">
+  {{#each list}}
+    {{>ele}}
+  {{/each}}
+</template>
+
+<template name="ele">
+<li>
+{{title}}
+{{>ele2}}
+</li>
+</template>
+
+<template name="ele2">
+  <ul>
+    <li>{{title}}</li>
+  </ul>
+</template>
